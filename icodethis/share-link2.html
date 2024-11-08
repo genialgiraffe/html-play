@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="./share-link2.js"></script>
+</head>
+<!-- Change code below this line -->
+
+<body class="bg-[#eff2f8] flex flex-col h-screen items-center justify-center m-0 min-w-72">
+    <button id="openShare" class="bg-[#9677ef] size-80 rounded-full">Share your stuff!</button>
+    <dialog id="form" class="pl-6 max-w-[450px] w-full overflow-auto rounded">
+        <div class="flex justify-between min-w-72">
+            <h1 class="font-bold mt-6 text-sm">Share something awesome</h1>
+            <button id="close" class="border-none size-8 pl-2 m-1">
+                <svg fill="#000000" width="15px" height="15px" viewBox="0 0 24 24" id="cross" data-name="Line Color"
+                    xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+                    <line id="primary" x1="19" y1="19" x2="5" y2="5"
+                        style="fill: none; stroke: rgb(150, 150, 150); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                    </line>
+                    <line id="primary-2" data-name="primary" x1="19" y1="5" x2="5" y2="19"
+                        style="fill: none; stroke: rgb(150, 150, 150); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                    </line>
+                </svg></button>
+        </div>
+        <p class="my-3 pr-3 text-xs">New and awesome design content will be added to our website,<br /> and may even end
+            up in our weekly newsletter.</p>
+        <form class="flex flex-wrap gap-2 mt-4">
+            <input id="website" type="text" placeholder="E.g. https://"
+                class="border-2 min-w-64 px-2 shadow-inner w-9/12" />
+            <button id="submit" type="submit"
+                class="bg-[#9677ef] hover:shadow-lg py-2 px-4 rounded shadow-md text-white text-xs">Share</button>
+        </form>
+        <div class="bg-purple-200 mr-6 my-6 p-3 rounded">
+            <h2 class="font-bold mb-3 text-xs">Sharing guidelines</h2>
+            <p class="text-xs">We accept quality design/visual projects, animations, 3D, UI/UX prototypes, or any other
+                visual design project. <a href="#" onClick="return false;"
+                    class="font-semibold hover:font-bold text-[#9677ef] underline underline-offset-2">Read more</a></p>
+        </div>
+    </dialog>
+</body>
+<!-- Change code above this line -->
+
+</html>

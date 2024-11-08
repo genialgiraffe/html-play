@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="./pricing-table.js"></script>
+    <link rel="stylesheet" href="./pricing.table.css">
+
+</head>
+
+<!-- Change code below this line -->
+
+<body class="">
+    <div class="fixed bg-fuchsia-500/20 hidden left-1/4 md:block rounded-full size-80 top-12 -z-10"></div>
+    <div class="fixed bg-cyan-500/20 right-12 rounded-full size-80 top-3 -z-10"></div>
+    <div class="fixed bg-orange-500/20 bottom-0 left-0 rounded-full size-80 -z-10"></div>
+    <div class="fixed bg-cyan-500/20 -bottom-48 hidden lg:block left-80 rounded-full size-80 -z-10"></div>
+    <div class="fixed bg-fuchsia-500/20 -bottom-14 hidden lg:block right-24 rounded-full size-80 -z-10"></div>
+    <div class="fixed bg-white/60 backdrop-blur-md h-screen w-full -z-10"></div>
+    <div class="h-screen flex justify-center md:items-center">
+        <ol class="bg-white/30 border-[12px] border-white flex flex-wrap h-fit w-min md:w-fit rounded-md">
+            <li id="product-free"
+                class="border-4 border-transparent flex flex-col gap-4 group hover:border-fuchsia-200 hover:cursor-pointer justify-between w-44 m-6 p-2 rounded-md">
+                <h2 class="font-bold font-serif text-xl">Free</h2>
+                <p class="font-bold text-3xl"><span class="font-black text-base">$</span>0</p>
+                <p class="text-xs">Free for your whole team</p>
+                <p class="text-sm">For individuals or teams looking to organise anything.</p>
+                <button class="bg-fuchsia-200 font-bold group-hover:bg-fuchsia-400 p-3 text-xs rounded w-fit">Get
+                    started</button>
+            <li>
+            <li id="product-standard"
+                class="border-4 border-transparent flex flex-col gap-4 group hover:border-cyan-200  hover:cursor-pointer justify-between w-44 m-6 p-2 rounded-md">
+                <h2 class="font-bold font-serif text-xl">Standard</h2>
+                <p class="font-bold text-3xl"><span class="font-black text-base">$</span>6</p>
+                <p class="text-xs">Per user per month</p>
+                <p class="text-sm">For teams that need to manage more work.</p>
+                <button class="bg-cyan-200 font-bold group-hover:bg-cyan-400 p-3 text-xs rounded w-fit">Upgrade
+                    now</button>
+            <li>
+            <li id="product-premium" onclick=""
+                class="border-4 border-transparent flex flex-col gap-4 group hover:border-orange-200 hover:cursor-pointer justify-between w-44 m-6 p-2 rounded-md">
+                <h2 class="font-bold font-serif text-xl">Premium</h2>
+                <p class="font-bold text-3xl"><span class="font-black text-base">$</span>12</p>
+                <p class="text-xs">Per user per month</p>
+                <p class="text-sm">Best for teams that need to track multiple projects.</p>
+                <button class="bg-orange-200 font-bold group-hover:bg-orange-400 p-3 text-xs rounded w-fit">Try for
+                    free</button>
+            <li>
+                <ol>
+                    <div>
+                        <div id="toast" class="bg-green-400 fixed left-1/2 p-3 hidden top-0 rounded-b w-max"></div>
+</body>
+<!-- Change code above this line -->
+
+</html>

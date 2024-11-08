@@ -1,0 +1,23 @@
+/* Write your CSS code here */
+
+.popDown {
+    display: block;
+    animation: popDown 4s 0s ease-in alternate;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-100%);
+}
+
+@keyframes popDown {
+    10% {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+    }
+    75% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-100%);
+    }
+}
